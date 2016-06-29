@@ -1,7 +1,12 @@
-#
-# /usr/lib/python2.7/site-packages/keystone/identity/backends
-# /usr/lib/python2.7/site-packages/keystone-9.0.0-py2.7.egg-info/entry_points.txt
-#
+##
+## OpenStack Keystone driver for SecurePass
+##
+## (c) 2013 Giuseppe Paterno' (gpaterno@gpaterno.com)
+##          GARL Sagl (www.garl.ch)
+##
+## /usr/lib/python2.7/site-packages/keystone/identity/backends
+## /usr/lib/python2.7/site-packages/keystone-9.0.0-py2.7.egg-info/entry_points.txt
+##
 
 from __future__ import absolute_import
 import uuid
