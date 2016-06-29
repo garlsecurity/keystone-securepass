@@ -172,9 +172,11 @@ class Identity(identity.IdentityDriverV8):
         raise exception.NotImplemented() 
 
     def get_group(self, group_id):
+	LOG.warning("get_group")
         raise exception.NotImplemented() 
 
     def get_group_by_name(self, group_name, domain_id):
+        LOG.warning("get_group_by_name")
         raise exception.NotImplemented() 
 
     def update_group(self, group_id, group):
@@ -189,14 +191,18 @@ class Identity(identity.IdentityDriverV8):
     def remove_user_from_group(self, user_id, group_id):
         raise exception.NotImplemented() 
 
+    # Must return an empty list
     def list_groups_for_user(self, user_id, hints):
-        raise exception.NotImplemented() 
+	return []
 
     def list_groups(self, hints):
+	LOG.warning("list_groups")
         raise exception.NotImplemented() 
 
     def list_users_in_group(self, group_id, hints):
+	LOG.warning("list_users_in_group")
         raise exception.NotImplemented() 
 
     def check_user_in_group(self, user_id, group_id):
+	LOG.warning("check_user_in_group")
         raise exception.NotImplemented() 
