@@ -18,7 +18,6 @@ import six
 
 from keystone.common import clean
 from keystone.common import driver_hints
-from keystone.common import models
 from keystone import exception
 from keystone.i18n import _
 from keystone import identity
@@ -173,6 +172,53 @@ class Identity(identity.IdentityDriverV8):
     def delete_user(self, user_id):
         raise exception.NotImplemented() 
 
+    def change_password(self, user_id, new_password):
+        raise exception.NotImplemented() 
+
+    def create_group(self, group_id, group):
+        raise exception.NotImplemented() 
+
+    def get_group(self, group_id):
+	LOG.warning("get_group")
+        raise exception.NotImplemented() 
+
+    def get_group_by_name(self, group_name, domain_id):
+        LOG.warning("get_group_by_name")
+        raise exception.NotImplemented() 
+
+    def update_group(self, group_id, group):
+        raise exception.NotImplemented() 
+
+    def delete_group(self, group_id):
+        raise exception.NotImplemented() 
+
+    def add_user_to_group(self, user_id, group_id):
+        raise exception.NotImplemented() 
+
+    def delete_user(self, user_id):
+        raise exception.NotImplemented() 
+
+    def create_group(self, group_id, group):
+        raise exception.NotImplemented() 
+
+    def get_group(self, group_id):
+	LOG.warning("get_group")
+        raise exception.NotImplemented() 
+
+    def get_group_by_name(self, group_name, domain_id):
+        LOG.warning("get_group_by_name")
+        raise exception.NotImplemented() 
+
+    def update_group(self, group_id, group):
+        raise exception.NotImplemented() 
+
+    def delete_group(self, group_id):
+        raise exception.NotImplemented() 
+
+    def add_user_to_group(self, user_id, group_id):
+        raise exception.NotImplemented() 
+
+
     def create_group(self, group_id, group):
         raise exception.NotImplemented() 
 
@@ -211,3 +257,4 @@ class Identity(identity.IdentityDriverV8):
     def check_user_in_group(self, user_id, group_id):
 	LOG.warning("check_user_in_group")
         raise exception.NotImplemented() 
+
