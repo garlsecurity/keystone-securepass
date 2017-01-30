@@ -1,8 +1,8 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='keystone-securepass',
-    version='1.0',
+    name='keystone_securepass',
+    version='1.1',
 
     description='SecurePass Keystone driver for OpenStack',
 
@@ -29,7 +29,7 @@ setup(
 
     entry_points={
         'keystone.identity': [
-            'securepass = keystone.identity.backends.securepass:Identity',
+            'securepass = keystone_securepass.securepass:Identity',
         ],
     },
 
